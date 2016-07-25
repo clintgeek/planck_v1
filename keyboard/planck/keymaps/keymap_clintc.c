@@ -64,21 +64,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,-----------------------------------------------------------------------.
    * |#pass|!pass|  up |     |     |     |     |     |     |  up |     |spass|
    * |-----------------------------------------------------------------------|
-   * | esc |  lf |  dn |  rt |     |     |     |     |  lf |  dn |  rt |     |
+   * | esc |  lf |  dn |  rt |     |     |     |     |  lf |  dn |  rt |cpass|
    * |-----------------------------------------------------------------------|
-   * |caps | prv | ply | nxt |  vd |  vu |  vm |     |     |     |     |sleep|
+   * |caps | prv | ply | nxt |  vd |  vu |  vm |     |     |     |  BL |sleep|
    * |-----------------------------------------------------------------------|
    * | -*- |     |     |     |     |           |     |     |     |     | -*- |
    * `-----------------------------------------------------------------------'
    */
     [3] = {  // arrow and media keys
       {M(1),  M(2),  KC_UP,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_UP, KC_TRNS,  M(0)},
-      {KC_ESC,  KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_LEFT,  KC_DOWN,  KC_RGHT, KC_TRNS},
+      {KC_ESC,  KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_LEFT,  KC_DOWN,  KC_RGHT, M(3)},
       {KC_CAPS,  KC_MPRV,  KC_MPLY,  KC_MNXT,  KC_VOLD,  KC_VOLU,  KC_MUTE,  KC_TRNS,  KC_TRNS,  KC_TRNS,  BL_STEP,  KC_SYSTEM_SLEEP},
       {KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,   KC_TRNS  ,  KC_TRNS  ,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS,  KC_TRNS}
     },
 
-  /* MIT Layout (future use)
+  /* MIT Layout (fn2)
    *
    * ,-----------------------------------------------------------------------.
    * |     |     |     |     |     |     |     |     |     |     |     |     |
